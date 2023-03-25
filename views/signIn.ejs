@@ -1,0 +1,28 @@
+<%- include('navbar')%>
+<body>
+    <div class="text-center F1 font30 padding-bt padding-t bold">Welcome to MVC programming</div>
+        <h6 class="text-center F1 font30 padding-bt padding-t bold">start</h6>
+        <div class="container-fluid padding-bt ">
+            <div class="row">
+                <div class="col-xxl-3"></div>
+                <div class="col-9 col-lg-18 ">
+                            <form class="form-horizontal" class="d-flex" action="/signIn"
+                                method="POST">
+                                <div class="from-group">
+                                    <label class="col-lg-3 control-label">user:</label>
+                                    <div class="col-lg-8">
+                                        <input name="username" class="form-control me-2" type="text" value="admin123" >
+                                    </div>
+                                </div>
+                                <div class="padding-t padding-l ">
+                                    <button class="btn btn-success" type="submit">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

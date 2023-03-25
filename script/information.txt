@@ -1,0 +1,19 @@
+CREATE table UserChatCsIfElse (
+ID_User int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+name varchar(255),
+timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE ChatCsIfElse(
+ID_AI int NOT NULL AUTO_INCREMENT,
+usersid int ,
+history_User varchar(255),
+history_Ai  varchar(255),
+timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (ID_AI),
+CONSTRAINT FK_ai_users FOREIGN KEY (usersid)
+REFERENCES UserChatCsIfElse(ID_User)
+);
+
+
+
